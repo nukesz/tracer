@@ -9,13 +9,13 @@ import com.nukesz.tracer.boundary.TracerInterceptor;
 @Interceptors(TracerInterceptor.class)
 public class TracedEJB {
 
-	public void methodWithoutArguments() {
-	}
+    public void methodWithoutArguments() {
+    }
 
-	public void methodWithTwoArguments(String arg1, int arg2) {
-	}
-	
-	public int methodReturnsInt() {
-		return 42;
-	}
+    public void methodWithTwoArguments(final String arg1, final int arg2) {
+    }
+
+    public int methodReturnsInt() {
+        return 42;
+    }
 }

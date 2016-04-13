@@ -11,9 +11,9 @@ import com.nukesz.tracer.entity.TraceEvent;
 @Stateless
 public class TraceMonitor {
 
-	private static Logger LOGGER = Logger.getLogger(TraceMonitor.class.getName());
+    private static Logger LOGGER = Logger.getLogger(TraceMonitor.class.getName());
 
-	public void onTraceEvent(@Observes final TraceEvent event) {
-		LOGGER.log(Level.FINER, event.toString());
-	}
+    public void onTraceEvent(@Observes final TraceEvent event) {
+        LOGGER.log(Level.FINER, event.toString());
+    }
 }

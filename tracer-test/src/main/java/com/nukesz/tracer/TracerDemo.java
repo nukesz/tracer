@@ -9,13 +9,13 @@ import javax.ws.rs.Path;
 @Stateless
 public class TracerDemo {
 
-	@Inject
-	TracedEJB tracedEJB;
-	
-	@GET
-	public int get() {
-		tracedEJB.methodWithoutArguments();
-		tracedEJB.methodWithTwoArguments("HelloInterceptor", 2);
-		return tracedEJB.methodReturnsInt();
-	}
+    @Inject
+    TracedEJB tracedEJB;
+
+    @GET
+    public int get() {
+        tracedEJB.methodWithoutArguments();
+        tracedEJB.methodWithTwoArguments("HelloInterceptor", 2);
+        return tracedEJB.methodReturnsInt();
+    }
 }
