@@ -1,6 +1,6 @@
 # Tracer interceptor
 
-The interceptor log the method invocation events.
+The interceptor logs the method invocations.
 
 Usage:
 Add the maven project as a maven depedency
