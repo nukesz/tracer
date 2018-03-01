@@ -6,9 +6,9 @@ Usage:
 Add the maven project as a maven depedency
 ```
 <dependency>
-			<groupId>com.nukesz</groupId>
-			<artifactId>tracer</artifactId>
-			<version>0.1</version>
+    <groupId>com.nukesz</groupId>
+    <artifactId>tracer</artifactId>
+    <version>0.1</version>
 </dependency>
 ```
 Add the interceptor on your EJB:
